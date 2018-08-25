@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11445" started-at="2018-08-24T09:43:32Z" finished-at="2018-08-24T09:43:44Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="11445" started-at="2018-08-24T09:43:32Z" finished-at="2018-08-24T09:43:44Z">
+      <class name="framework.project.PayslipTests">
+        <test-method status="PASS" signature="runBeforeClass(java.lang.String, java.lang.String)[pri:0, instance:framework.project.PayslipTests@204f30ec]" name="runBeforeClass" is-config="true" duration-ms="6260" started-at="2018-08-24T09:43:32Z" finished-at="2018-08-24T09:43:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://shiny-people-e-elb-fqhcv8628wjs-331954475.ap-southeast-2.elb.amazonaws.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runBeforeClass -->
+        <test-method status="PASS" signature="ShouldStorePayslip(java.util.HashMap)[pri:0, instance:framework.project.PayslipTests@204f30ec]" name="ShouldStorePayslip" duration-ms="4391" started-at="2018-08-24T09:43:39Z" data-provider="ShouldStorePayslip" finished-at="2018-08-24T09:43:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Test, lastName=Emp1, annualIncome=81900, superRate=9}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShouldStorePayslip -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:framework.project.PayslipTests@204f30ec]" name="AfterClass" is-config="true" duration-ms="767" started-at="2018-08-24T09:43:43Z" finished-at="2018-08-24T09:43:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- framework.project.PayslipTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

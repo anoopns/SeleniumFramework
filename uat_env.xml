@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameters TestSuite">
+<test name="Test 1">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="url" value="http://shiny-people-e-elb-fqhcv8628wjs-331954475.ap-southeast-2.elb.amazonaws.com"></parameter>
+	<classes>
+		<class name="framework.project.PayslipTests"></class>
+	</classes>
+</test>
+</suite>

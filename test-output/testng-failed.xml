@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://shiny-people-e-elb-fqhcv8628wjs-331954475.ap-southeast-2.elb.amazonaws.com"/>
+    <classes>
+      <class name="framework.project.PayslipTests">
+        <methods>
+          <include name="ShouldStorePayslip" invocation-numbers="0"/>
+          <include name="runBeforeClass"/>
+          <include name="AfterClass"/>
+        </methods>
+      </class> <!-- framework.project.PayslipTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
