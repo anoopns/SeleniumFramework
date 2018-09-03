@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="framework.project.PayslipTests" hash-for-method="ShouldStorePayslip({firstName=Test, lastName=Emp1, annualIncome=81900, superRate=9})">ShouldStorePayslip({firstName=Test, lastName=Emp1, annualIncome=81900, superRate=9})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.tests.FlightSearchTests" hash-for-method="shouldSearchFlight({flyingFromShortName=Sydney, returnDate=10/09/2018, fylingFromLongName=Sydney, NSW, Australia (SYD-K...)">shouldSearchFlight({flyingFromShortName=Sydney, returnDate=10/09/2018, fylingFromLongName=Sydney, NSW, Australia (SYD-K...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,15 +120,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">framework.project.PayslipTests</span>
+              <span class="class-name">test.tests.FlightSearchTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ShouldStorePayslip({firstName=Test, lastName=Emp1, annualIncome=81900, superRate=9})">
-                  </a> <!-- ShouldStorePayslip({firstName=Test, lastName=Emp1, annualIncome=81900, superRate=9}) -->
-                  <span class="method-name">ShouldStorePayslip</span>
-                  <span class="parameters">({firstName=Test, lastName=Emp1, annualIncome=81900, superRate=9})</span>
+                  <a name="shouldSearchFlight({flyingFromShortName=Sydney, returnDate=10/09/2018, fylingFromLongName=Sydney, NSW, Australia (SYD-K...)">
+                  </a> <!-- shouldSearchFlight({flyingFromShortName=Sydney, returnDate=10/09/2018, fylingFromLongName=Sydney, NSW, Australia (SYD-K...) -->
+                  <span class="method-name">shouldSearchFlight</span>
+                  <span class="parameters">({flyingFromShortName=Sydney, returnDate=10/09/2018, fylingFromLongName=Sydney, NSW, Australia (SYD-Kingsford Smith Intl.), searchTitleToVerify=Select your departure to Kochi, flyingToShortName=Kochi, fylingToLongName=Kochi, India (COK-Cochin Intl.), startDate=04/09/2018})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,9 +145,10 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;http://shiny-people-e-elb-fqhcv8628wjs-331954475.ap-southeast-2.elb.amazonaws.com&quot;/&gt;
+    &lt;parameter name=&quot;screenShotLocation&quot; value=&quot;./ScreenShots/&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.expedia.com.au&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;framework.project.PayslipTests&quot;/&gt;
+      &lt;class name=&quot;test.tests.FlightSearchTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -189,14 +190,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ShouldStorePayslip')
-data.setCell(0, 2, 'framework.project.PayslipTests')
-data.setCell(0, 3, 4391);
+data.setCell(0, 1, 'shouldSearchFlight')
+data.setCell(0, 2, 'test.tests.FlightSearchTests')
+data.setCell(0, 3, 17055);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -222,18 +223,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">framework.project.PayslipTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.tests.FlightSearchTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">runBeforeClass(chrome, http://shiny-people-e-elb-fqhcv8628wjs-331954475.ap-southeast-2.elb.amazonaws.com)</span>
+                <span class="method-name">runBeforeClass(chrome, https://www.expedia.com.au)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">ShouldStorePayslip({firstName=Test, lastName=Emp1, annualIncome=81900, superRate=9})</span>
-                <span class="method-start">6272 ms</span>
+                <span class="method-name">shouldSearchFlight({flyingFromShortName=Sydney, returnDate=10/09/2018, fylingFromLongName=Sydney, NSW, Australia (SYD-K...)</span>
+                <span class="method-start">20480 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest(https://www.expedia.com.au, ./ScreenShots/, [TestResult name=shouldSearchFlight status=SUCCESS metho...)</span>
+                <span class="method-start">37537 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">AfterClass</span>
-                <span class="method-start">10666 ms</span>
+                <span class="method-start">50815 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <parameter name="browser" value="chrome"></parameter>
-  <parameter name="url" value="http://shiny-people-e-elb-fqhcv8628wjs-331954475.ap-southeast-2.elb.amazonaws.com"></parameter>
-  
+  <parameter name="url" value="https://www.expedia.com.au"></parameter>
+  <parameter name="screenShotLocation" value="./ScreenShots/"></parameter>
     <classes>
-      <class name="framework.project.PayslipTests"/>
+      <class name="test.tests.FlightSearchTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

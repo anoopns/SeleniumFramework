@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="11445" started-at="2018-08-24T09:43:32Z" finished-at="2018-08-24T09:43:44Z">
+  <suite name="Suite" duration-ms="52983" started-at="2018-09-03T11:01:21Z" finished-at="2018-09-03T11:02:14Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="11445" started-at="2018-08-24T09:43:32Z" finished-at="2018-08-24T09:43:44Z">
-      <class name="framework.project.PayslipTests">
-        <test-method status="PASS" signature="runBeforeClass(java.lang.String, java.lang.String)[pri:0, instance:framework.project.PayslipTests@204f30ec]" name="runBeforeClass" is-config="true" duration-ms="6260" started-at="2018-08-24T09:43:32Z" finished-at="2018-08-24T09:43:39Z">
+    <test name="Test" duration-ms="52983" started-at="2018-09-03T11:01:21Z" finished-at="2018-09-03T11:02:14Z">
+      <class name="test.tests.FlightSearchTests">
+        <test-method status="PASS" signature="runBeforeClass(java.lang.String, java.lang.String)[pri:0, instance:test.tests.FlightSearchTests@402a079c]" name="runBeforeClass" is-config="true" duration-ms="20388" started-at="2018-09-03T11:01:21Z" finished-at="2018-09-03T11:01:42Z">
           <params>
             <param index="0">
               <value>
@@ -16,29 +16,50 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[http://shiny-people-e-elb-fqhcv8628wjs-331954475.ap-southeast-2.elb.amazonaws.com]]>
+                <![CDATA[https://www.expedia.com.au]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runBeforeClass -->
-        <test-method status="PASS" signature="ShouldStorePayslip(java.util.HashMap)[pri:0, instance:framework.project.PayslipTests@204f30ec]" name="ShouldStorePayslip" duration-ms="4391" started-at="2018-08-24T09:43:39Z" data-provider="ShouldStorePayslip" finished-at="2018-08-24T09:43:43Z">
+        <test-method status="PASS" signature="shouldSearchFlight(java.util.HashMap)[pri:0, instance:test.tests.FlightSearchTests@402a079c]" name="shouldSearchFlight" duration-ms="17055" started-at="2018-09-03T11:01:42Z" data-provider="ShouldSearchFlight" finished-at="2018-09-03T11:01:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{firstName=Test, lastName=Emp1, annualIncome=81900, superRate=9}]]>
+                <![CDATA[{flyingFromShortName=Sydney, returnDate=10/09/2018, fylingFromLongName=Sydney, NSW, Australia (SYD-Kingsford Smith Intl.), searchTitleToVerify=Select your departure to Kochi, flyingToShortName=Kochi, fylingToLongName=Kochi, India (COK-Cochin Intl.), startDate=04/09/2018}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ShouldStorePayslip -->
-        <test-method status="PASS" signature="AfterClass()[pri:0, instance:framework.project.PayslipTests@204f30ec]" name="AfterClass" is-config="true" duration-ms="767" started-at="2018-08-24T09:43:43Z" finished-at="2018-08-24T09:43:44Z">
+        </test-method> <!-- shouldSearchFlight -->
+        <test-method status="PASS" signature="afterTest(java.lang.String, java.lang.String, org.testng.ITestResult)[pri:0, instance:test.tests.FlightSearchTests@402a079c]" name="afterTest" is-config="true" duration-ms="13277" started-at="2018-09-03T11:01:59Z" finished-at="2018-09-03T11:02:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.expedia.com.au]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[./ScreenShots/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=shouldSearchFlight status=SUCCESS method=FlightSearchTests.shouldSearchFlight(java.util.HashMap)[pri:0, instance:test.tests.FlightSearchTests@402a079c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:test.tests.FlightSearchTests@402a079c]" name="AfterClass" is-config="true" duration-ms="2149" started-at="2018-09-03T11:02:12Z" finished-at="2018-09-03T11:02:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterClass -->
-      </class> <!-- framework.project.PayslipTests -->
+      </class> <!-- test.tests.FlightSearchTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

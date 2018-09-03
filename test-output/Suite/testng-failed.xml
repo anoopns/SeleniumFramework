@@ -3,15 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="http://shiny-people-e-elb-fqhcv8628wjs-331954475.ap-southeast-2.elb.amazonaws.com"/>
+    <parameter name="screenShotLocation" value="./ScreenShots/"/>
+    <parameter name="url" value="https://www.expedia.com.au"/>
     <classes>
-      <class name="framework.project.PayslipTests">
+      <class name="framework.project.FlightSearchTests">
         <methods>
-          <include name="ShouldStorePayslip" invocation-numbers="0"/>
-          <include name="runBeforeClass"/>
+          <include name="shouldSearchFlight" invocation-numbers="0"/>
+          <include name="afterTest"/>
           <include name="AfterClass"/>
+          <include name="runBeforeClass"/>
         </methods>
-      </class> <!-- framework.project.PayslipTests -->
+      </class> <!-- framework.project.FlightSearchTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
